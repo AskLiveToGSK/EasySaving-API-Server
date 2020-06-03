@@ -30,7 +30,8 @@
     "migrate": "node ./dist/migrate",
     "prestart": "npm run build",
     "start": "node -r source-map-support/register .",
-    "clean": "lb-clean dist *.tsbuildinfo .eslintcache"
+    "clean": "lb-clean dist *.tsbuildinfo .eslintcache",
+    "build:sdk": "generate-openAPI-yaml.sh"
   },
   "repository": {
     "type": "git"
@@ -52,6 +53,7 @@
     "@loopback/rest": "^5.0.1",
     "@loopback/rest-explorer": "^2.2.2",
     "@loopback/service-proxy": "^2.3.0",
+    "json2yaml": "^1.1.0",
     "tslib": "^1.10.0"
   },
   "devDependencies": {
